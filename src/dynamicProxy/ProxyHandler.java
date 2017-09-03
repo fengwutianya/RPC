@@ -17,7 +17,7 @@ public class ProxyHandler implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws InvocationTargetException, IllegalAccessException {
         //代理功能
-        System.out.println("proxy");
+        System.out.println();
 
         return method.invoke(proxied, args);
     }
